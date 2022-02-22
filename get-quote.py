@@ -1,3 +1,4 @@
+from lib2to3.pgen2.token import NEWLINE
 from random import random
 
 
@@ -10,7 +11,9 @@ def primary():
   f.close()
   last = len(quotes) - 1
   rnd = random.randint(0, last)
-  print(quotes[rnd])
+  rnd2 = random.randint(0, last)
+  print(quotes[rnd]),
+  print(quotes[rnd2])
 
 if __name__== "__main__":
  primary()
